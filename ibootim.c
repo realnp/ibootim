@@ -480,6 +480,7 @@ int ibootim_write(ibootim *image, const char *path) {
 	}
 	
 	printf("[+] iBootIm image was written to '%s'.\n", path);
+	fclose(outputFile);
 	return 0;
 }
 
